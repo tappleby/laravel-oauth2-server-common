@@ -3,7 +3,7 @@
 namespace Tappleby\OAuth2\Models;
 
 
-interface AccessTokenInterface {
+interface AccessTokenInterface extends ScopeInterface {
 
 	/**
 	 * @return string
@@ -26,8 +26,4 @@ interface AccessTokenInterface {
 	 */
 	function getExpires();
 
-	/**
-	 * @return array|null
-	 */
-	function getScopes();
 }

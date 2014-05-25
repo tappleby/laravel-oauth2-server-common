@@ -4,7 +4,7 @@
 namespace Tappleby\OAuth2\Models;
 
 
-interface AuthorizationCodeInterface {
+interface AuthorizationCodeInterface extends ScopeInterface {
 
   /**
    * @return string
@@ -33,9 +33,4 @@ interface AuthorizationCodeInterface {
    * @return int
    */
   function getExpires();
-
-  /**
-   * @return array|null
-   */
-  function getScopes();
 }

@@ -3,7 +3,7 @@
 namespace Tappleby\OAuth2\Models;
 
 
-interface RefreshTokenInterface {
+interface RefreshTokenInterface extends ScopeInterface {
 
 	/**
 	 * @return string
@@ -25,9 +25,4 @@ interface RefreshTokenInterface {
 	 * @return int
 	 */
 	function getExpires();
-
-	/**
-	 * @return array|null
-	 */
-	function getScopes();
 }
